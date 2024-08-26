@@ -1,0 +1,269 @@
+*{
+    margin: 0px;
+    font-family: 'inter';
+}
+
+:root{
+    
+}
+
+body{
+    background-color: #F2F2F2;
+}
+
+/*menu-de-navegação*/
+
+.container{
+    background-color: #0C70F2;
+    color: #FFFFFF;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid: auto;
+
+    height: 90px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.final-nav{
+    font-size: 20px;
+    display: flex;
+    margin-left: 500px;
+
+}
+
+#End{
+    margin-right: 100px;
+}
+.link-nav{
+    text-decoration: none;
+    color: #F2F2F2;
+}
+
+.link-nav:hover{
+    
+    color: gray
+}
+
+/*titulo*/
+
+.titulo{
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+/*parte da Section junto com o formulário*/
+section{
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 20px;
+    width: 50%;
+    height:620px;
+    margin: auto;
+}
+
+.group-form{    
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+/*formulário*/
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    
+}
+
+input{
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    width: 400px;
+    background-color: #F2F2F2;
+
+    margin-top: 20px;
+    margin-bottom: 20px; 
+
+    font-size: 20px; 
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+}
+
+#lat-long1{
+    margin-right: 25px;
+
+}
+.form1{
+width: 180px;
+}
+
+.titulo-lat-long{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 35px;
+}  
+
+#botao{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    
+    background-color: #0C70F2;
+    color: #FFFFFF;
+    width: 420px;
+    height: 42px;
+
+    border-radius: 8px;
+    border: none;
+
+    margin-top: 50px;
+}
+
+button:hover{
+    color:black;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+/* Buscar CEP*/
+
+#titulo-1{
+    display: flex;
+    margin-right: 200px;
+    margin-top: 175px; 
+
+}
+
+#titulo-2{
+    font-size: 40px;
+
+    margin-top: 50px;
+    margin-right: 50px;
+
+}
+
+
+#retangulo{
+    
+    width: 975px;
+    height: 35px;
+    background-color: #0C70F2;
+    border-radius: 30px 30px 0px 0px;
+    margin: auto;
+    color:white;
+
+    display: flex;
+    justify-content: space-around;
+    padding-top:10px;
+
+}
+
+#retangulo1{
+    width: 975px;
+    height: 45px;
+    background-color: white;
+    border-radius: 0px 0px 30px 30px;
+    margin: auto;
+    color:white;
+    
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.campoEnd{
+    width: 250px;
+    height: auto;
+    margin-top: 14px;
+    
+}
+
+/*Titulo-previsao-do-tempo*/
+
+#titulo-previsao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 270px;
+    margin-top: 220px;
+
+    margin-bottom: 20px
+}  
+
+#titulo-prev2{
+    width: 65%;
+    height: 50px;
+    background-color:white;
+
+    border-radius: 40px;
+    border-color: #0C70F2;
+    border-style:solid;
+    margin-left: 18%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+/*rodapé*/
+
+footer{
+    width: 50px;
+    height: 25px;
+    background-color: #0C70F2;
+}
+
+
+
+ footer{
+    width: 100%;
+    height:75px;   
+    background-color: #0C70F2;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    color: #F2F2F2;
+    margin-top: 20%;
+}
+
+
+.link{
+    font-size: 20px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #F2F2F2;
+    
+    align-items: center;
+    padding: 5px;
+}
+
+.link:hover{
+    color: gray;
+}
+
+footer .rodape2, .link:first-child {
+    border-right: 3px solid #F2F2F2;
+    
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Weather</title>
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <!-- MENU-DE-NAVEGAÇÃO -->
+        <nav>
+            <div class="container">
+                <div class="nav">
+                    <h1>DNCWeather</h1>
+                </div>
+                <div class="nav">
+                    <ul class="final-nav">
+                        <li type="none" id="End"><a class="link-nav" href="" target="_blank">Endereços</a></li>
+                        <li type="none"><a class="link-nav" href="" target="_blank">Previsão do Tempo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- TÍTULOS -->
+        <div class="titulo">
+            <div>
+                <h1>
+                    Descubra Mais com Precisão: <br> Previsões do Tempo e endereços <br> em tempo real.
+                </h1>
+            </div>
+            <div id="nuvem">
+                <img src="imagens/nuvem.svg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <!-- SEÇÃO DE FORMULÁRIOS -->    
+    <section>                 
+        <form>
+            <div class="group-form">  
+                <p>
+                    Primeiro nome:<br> <input class="form" type="text" placeholder="Insira seu Nome">
+                </p>
+                <p>
+                    E-mail:<br><input class="form" type="email" placeholder="Insira seu E-mail" >
+                </p>
+                <p>
+                    Digite o CEP:<br> <input id="CEP" class="form" type="text" placeholder="Insira o CEP.">
+                </p>
+            </div>
+            <div> 
+                <label class="titulo-lat-long" for="">Digite a latitude e longitude para saber a previsão: <br> </label>
+            </div>
+            <div id="container">
+                <div id="lat-long1">
+                    <input id="Latitude" class="form1" type="text" placeholder="Latitude">
+                </div>
+                <div id="lat-long2">
+                    <input id="Longitude" class="form1" type="text" placeholder="Longitude">
+                </div>
+            </div>
+        </form>
+        <div id="botao">
+            <button type="button" onclick="buscarDados()">Acessar</button>
+        </div>
+    </section>
+
+    <!-- RESPOSTA DA API -->
+    <main>
+        <div class="titulo">
+            <div id="titulo-1">
+                <h1 id="titulo-2">Resultado da busca por CEP:</h1>
+                <img src="imagens/Localizacao.svg" alt="">
+            </div>
+        </div>
+        <div>
+            <div id="retangulo">
+                <p id="logradouro">Logradouro/Nome</p>
+                <p id="bairro">Bairro/Distrito</p>
+                <p id="localidade">Localidade/UF</p>
+            </div>
+            <div id="retangulo1">
+                <input id="Rua" class="campoEnd" readonly type="text">
+                <input id="Bairro" class="campoEnd" readonly type="text">
+                <input id="Cidade" class="campoEnd" readonly type="text">
+            </div>
+        </div>
+        <div>
+            <div id="titulo-previsao">
+                <div>
+                    <h1 id="text-prev">Previsão do Tempo na Região:</h1>
+                </div>
+                <div>
+                    <img src="imagens/nuvem2.svg" alt="">
+                </div>
+            </div>
+            <div id="titulo-prev2">
+                <h4>Previsão do tempo de acordo com a Região:</h4>
+            </div>
+            <div id="resposta"></div> <!-- Contêiner para a resposta da API de previsão do tempo -->
+        </div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <div id="rodape2">
+            <a href="" class="link">Termos de Uso</a>
+            <a href="" class="link">Política de privacidade</a>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+
+    </script>
+</body>
+</html>
